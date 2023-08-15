@@ -125,10 +125,18 @@ function find()
     x=y.toUpperCase();
     if(x.includes("AGE"))
     {
-        document.getElementById('bar').value="I AM 21 YEARS OLD."; 
+         if(x.includes("COLLAGE"))
+    {
+        document.getElementById('bar').value="ORIENTAL INSTITUTE, BHOPAL."; 
         setTimeout(function() {
             document.getElementById('bar').value=""; 
         },2000);
+    }
+       else{ 
+        document.getElementById('bar').value="I AM 21 YEARS OLD."; 
+        setTimeout(function() {
+            document.getElementById('bar').value=""; 
+        },2000);}
     }
     else if(x.includes("CGPA"))
     {
@@ -283,13 +291,7 @@ function find()
 
         
 }
-    else if(x.includes("COLLAGE"))
-    {
-        document.getElementById('bar').value="ORIENTAL INSTITUTE, BHOPAL."; 
-        setTimeout(function() {
-            document.getElementById('bar').value=""; 
-        },2000);
-    }
+   
     else if(x.includes("UNIVERSITY"))
     {
         document.getElementById('bar').value="MY UNIVERSITY IS RGPV."; 
